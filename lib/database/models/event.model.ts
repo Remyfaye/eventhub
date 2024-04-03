@@ -3,7 +3,7 @@ import { StaticImport } from "next/dist/shared/lib/get-img-props";
 export interface IEvent extends Document {
   // map(arg0: (event: any) => import("react").JSX.Element): import("react").ReactNode;
   _id: string;
-  imageUrl: string | StaticImport;
+  imageUrl: string | StaticImport | undefined;
   title: string;
   description?: string;
   location?: string;
