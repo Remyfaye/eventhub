@@ -45,7 +45,7 @@ export default function Home({ searchParams }: SearchParamProps) {
               className="sm:w-fit mt-5 capitalize button w-full bg-purple-800"
               size="lg"
             >
-              <Link href="#events">register now</Link>
+              <Link href="/events/search">register now</Link>
             </Button>
           </div>
 
