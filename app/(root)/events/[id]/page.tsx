@@ -67,7 +67,7 @@ const page = () => {
         {/* top image */}
         <div className="lg:h-[50%]">
           <Image
-            src={event?.imageUrl}
+            src="/assets/images/event21.jpg"
             width={700}
             height={700}
             alt="image"
