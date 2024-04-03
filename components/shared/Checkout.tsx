@@ -13,7 +13,12 @@ import { useRouter } from "next/navigation";
 
 loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!);
 
-const Checkout = ({ event, userId }: { event: IEvent; userId: string }) => {
+export type eventParams = {
+  event: IEvent;
+  userId: string;
+};
+
+const Checkout = ({ event, userId }: eventParams) => {
   const eventId = event?._id;
   const buyerId = userId;
   const router = useRouter();

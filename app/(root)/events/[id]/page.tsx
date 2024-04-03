@@ -101,7 +101,8 @@ const page = () => {
             {userId === undefined ? (
               <Link href="/sign-up">get ticket</Link>
             ) : (
-              <Checkout event={event} userId={userId} />
+              // <Checkout event={event} userId={userId} />
+              <></>
             )}
             {/* buy ticket */}
           </button>
@@ -134,11 +135,11 @@ const page = () => {
           </div>
 
           {/* description */}
-          <p className="mt-5 text-gray-700 p-medium-16 maxLength={100} ">
+          {/* <p className="mt-5 text-gray-700 p-medium-16 maxLength={100} ">
             {event?.description?.length > 200
               ? event?.description.slice(0, 200)
               : event?.description}
-          </p>
+          </p> */}
           <div></div>
         </div>
       </div>
