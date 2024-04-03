@@ -72,7 +72,7 @@ const EventCollection = ({ searchParams }: SearchParamProps) => {
               <div className=" shadow-lg rounded-2xl  lg:w-[350px] lg:h-[360px]">
                 <div>
                   <Image
-                    className=" w-full h-[10rem] object-cover rounded-t-2xl"
+                    className=" w-full h-[10rem] object-cover rounded-t-2xl mb-10"
                     src={event.imageUrl}
                     width={500}
                     height={500}
@@ -80,20 +80,20 @@ const EventCollection = ({ searchParams }: SearchParamProps) => {
                   />
                   <Link href={`/events/${event._id}/update`}>
                     <div>
-                      <Image
+                      {/* <Image
                         src="/assets/icons/edit.svg"
                         alt="edit"
                         width={45}
                         height={45}
-                        className="relative bg-white z-20 rounded-xl p-3 top-[90%] left-[90%] lg:left-[85%]"
-                      />
+                        className="relative bg-white z-20 rounded-xl p-3 top-[90%] left-[91%] lg:left-[85%]"
+                      /> */}
                     </div>
                   </Link>
                 </div>
 
                 {/* event details */}
                 <div className="lg:mt-[-2.5rem] mt-[-2rem] capitalize mx-5 mb-10 py-5">
-                  <p className="mb-5 flex items-center gap-5">
+                  <p className="mb-5 flex items-center gap-5   ">
                     <small className="bg-emerald-200 p-2 rounded-full px-3">
                       <span>&#8358;</span> {event.price}
                     </small>
