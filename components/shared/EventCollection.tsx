@@ -62,6 +62,11 @@ const EventCollection = ({ searchParams }: SearchParamProps) => {
               <h1>no events available</h1>
             </div>
           )}
+          {eventList.length < 1 && (
+            <div className="lg:flex justify-center py-3 shadow-lg border-2 rounded-lg">
+              <h1 className="text-center my-5">Loading events...</h1>
+            </div>
+          )}
           {eventList.map((event) => {
             return (
               <div className=" shadow-lg rounded-2xl  lg:w-[350px] lg:h-[360px]">

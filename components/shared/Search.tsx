@@ -10,7 +10,7 @@ const Search = () => {
   const router = useRouter();
   const searchParams = useSearchParams();
 
-  useEffect(() => {
+  const onSearch = () => {
     const delayBounceFn = setTimeout(() => {
       let newUrl = "";
 
@@ -31,7 +31,11 @@ const Search = () => {
     }, 300);
 
     return () => clearTimeout(delayBounceFn);
-  }, [query, searchParams, router]);
+  };
+
+  // useEffect(() => {
+
+  // }, [query, searchParams, router]);
 
   return (
     <div className="bg-slate-100 w-full rounded-2xl my-3 flex-center overflow-hidden bg-grey-50 px-4 py-[10px]">
@@ -44,7 +48,7 @@ const Search = () => {
       <input
         placeholder="search"
         type="text"
-        onChange={(e) => setQuery(e.target.value)}
+        onChange={(e) => (setQuery(e.target.value), onSearch())}
         className="outline-none bg-slate-100 w-full rounded-2xl"
       />
     </div>
