@@ -128,10 +128,10 @@ const RelatedEvents = ({
                       <Link href={`/events/${event._id}/`}>{event.title}</Link>
                     </p>
 
-                    <p className="capitalize my-5 lg:my-2">
+                    {/* <p className="capitalize my-5 lg:my-2">
                       organizer : {event?.organizer?.firstname}{" "}
                       {event?.organizer?.lastname}
-                    </p>
+                    </p> */}
                   </div>
                 </div>
               );
