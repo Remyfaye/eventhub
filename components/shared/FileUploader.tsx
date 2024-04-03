@@ -17,7 +17,7 @@ const FileUploader = ({
 }: fileUploaderProps) => {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <UploadButton
+      {/* <UploadButton
         endpoint="imageUploader"
         onClientUploadComplete={(res) => {
           // Do something with the response
@@ -28,7 +28,7 @@ const FileUploader = ({
           // Do something with the error.
           alert(`ERROR! ${error.message}`);
         }}
-      />
+      /> */}
     </main>
   );
 };
